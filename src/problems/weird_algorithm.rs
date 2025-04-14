@@ -8,8 +8,7 @@ fn wal(num: &mut i32) -> &mut i32 {
         }
         print!("{:?} -> ", num);
     }
-
-    print!("{:?}", num);
+    println!();
     num
 }
 
@@ -20,5 +19,10 @@ mod tests {
     #[test]
     fn test_wal() {
         assert!(*wal(&mut 3) == 1)
+    }
+
+    #[test]
+    fn test_wal_big_num() {
+        assert!(*wal(&mut 900) == 1)
     }
 }
