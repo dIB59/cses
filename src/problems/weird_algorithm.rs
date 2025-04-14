@@ -1,7 +1,7 @@
 #[allow(dead_code)]
 fn wal(num: &mut i32) -> &mut i32 {
     while *num != 1 {
-        if *num % 2 == 1 {
+        if *num % 2 == 0 {
             *num = *num / 2;
         } else {
             *num = (3 * *num) + 1;
