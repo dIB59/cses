@@ -30,6 +30,6 @@ Clone and run:
 
 ```bash
 git clone https://github.com/your-username/cses-rust.git
-cd cses-rust
+cd cses
 cargo run
 ```
