@@ -4,7 +4,7 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 I'm using this project as a learning exercise to improve my Rust and competitive programming skills.
 
 ## 📁 Project Structure
-
+```
 .
 ├── Cargo.toml
 ├── Cargo.lock
@@ -15,7 +15,7 @@ I'm using this project as a learning exercise to improve my Rust and competitive
         ├── mod.rs
         ├── mweird_algorithmod.rs
         └── etc
-
+```
 
 - All problems live in the `src/problems/` directory.
 - `mod.rs` is used to register each problem module.
