@@ -1,15 +1,26 @@
 #[allow(dead_code)]
-fn wal(num: &mut i32) -> &mut i32 {
+fn wal(num: &mut u64) -> &mut u64 {
+
     while *num != 1 {
+        print!("{num} ");
+
         if *num % 2 == 0 {
             *num = *num / 2;
         } else {
             *num = (3 * *num) + 1;
         }
-        print!("{:?} -> ", num);
     }
-    println!();
+    print!("{num}");
     num
+}
+
+fn main() {
+    let mut inp: u64 = std::io::read_to_string(std::io::stdin())
+    .unwrap()
+    .trim()
+    .parse()
+    .unwrap();
+    wal(&mut inp);
 }
 
 #[cfg(test)]
